@@ -1,0 +1,145 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+
+.main-box {
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  flex-direction:column;
+  background-color:rgb(255,255,255);
+}
+
+.peragraph-box {
+  width: 100%;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  background-color:rgb(137,1,1);
+  display:flex;
+  justify-content:center;
+  border:0.2rem solid rgb(0,0,0);
+}
+
+p {
+  font-family:arial;
+  font-size: 2.8rem;
+  color: rgb(256,255,255);
+}
+
+.message-holder{
+width:100%
+height:auto;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+.message{
+color:rgb(0,0,0);
+font-family:sans-serif;
+font-size:0.8rem;
+margin-top:2%;
+margin-bottom:2%;
+margin-left:3%;
+}
+.message-2{
+color:rgb(0,0,0);
+font-family:sans-serif;
+font-weight:bold;
+font-size:2rem;
+margin-left:3%;
+margin-right:3%;
+margin-bottom:3%
+}
+
+.both-image-container {
+  max-width:100%;
+  height:auto;
+  background-color:rgb(255,255,255);
+  display: flex; /* Added flex display to contain the image boxes */
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.for-or{
+  font-size:0.7rem;
+  color:rgb(0,0,0);
+}
+.image-box {
+  width:100%;
+  height:auto;
+  margin-top:0.4vh;
+  outline:2px solid rgb(0,0,0);
+  border-radius:7%;
+  margin-left:1vw;
+  margin-right:1vw;
+
+}
+/*.image-box {
+  background-color: rgb(0, 255, 0);
+}
+
+.image-box2 {
+  background-color: rgb(0, 0, 255);
+}*/
+.person-image{
+width:100%;
+height:100%;
+border-radius:7%;
+vertical-align: bottom;
+}
+.names-container{
+width:100%;
+height:auto;
+background-color:rgb(255,255,255);
+margin-top:2.5%;
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+}
+.person1-name-box{
+width:30%;
+height:auto;
+background-color:rgb(255,255,255);
+text-align:center;
+margin-right:4%;
+}
+.person1-name{
+color:rgb(152,223,230);
+font-size:1.2rem;
+font-weight:bold;
+}
+.person2-name-box{
+width:30%;
+height:auto;
+background-color:rgb(255,255,255);
+text-align:center;
+}
+.person2-name{
+color:rgb(152,223,230);
+font-size:1.2rem;
+font-weight:bold;
+}
+#frist-img:active,#second-img:active{
+width:80%;
+height:80%;
+margin-top:2vh;
+}
+#frist-img:active{
+box-shadow:1vw -1.5vh 6vw 1vw rgb(255, 182, 193);
+}
+#second-img:active{
+box-shadow:-1vw -1.5vh 6vw 1vw rgb(255, 182, 193);
+}
+/*
+@media (min-width:361px) and (max-width:980px){
+    .both-image-container {
+    background-color:red;
+    }
+}
+*/

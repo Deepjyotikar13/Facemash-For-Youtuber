@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='style_for_top.css') }}" rel="stylesheet"/>
+    <title>The top 10 based on votes</title>
+</head>
+<body>
+    <div class="paragraph-box">
+        <p>FaceMash</p>
+    </div>
+    <div class="top-ranks-img-box">
+        {% for i in range(0, total_ind, 2) %}
+            <div class="two-img-box">
+                <div class="person-container">
+                    <div class="rank-num">
+                        <p>{{ i + 1 }}</p>
+                    </div>
+                    <img class="person-image" src="{{ url_for('static', filename='Photos_of_Youtubers/' + name_score[i]) }}" alt="person-left">
+                </div>
+                {% if i + 1 < total_ind %}
+                <div class="person-container">
+                    <div class="rank-num">
+                        <p>{{ i + 2 }}</p>
+                    </div>
+                    <img class="person-image" src="{{ url_for('static', filename='Photos_of_Youtubers/' + name_score[i + 1]) }}" alt="person-right">
+                </div>
+                {% endif %}
+            </div>
+            <div class="persons-name-container">
+                <div class="img-name" id="left-img">
+                    <p>{{ name_score[i].split('.')[0] }}</p>
+                </div>
+                {% if i + 1 < total_ind %}
+                <div class="img-name" id="right-img">
+                    <p>{{ name_score[i + 1].split('.')[0] }}</p>
+                </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
+
+
